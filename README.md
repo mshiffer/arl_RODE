@@ -1,3 +1,5 @@
+__Modifications to the SMAC Environments: In the SMAC framework, an attacking action is tied to a specific enemy unit. However, when the environment is reset at each episode, the same action ID may correspond to different enemies. This variability alters the semantics of actions across different episodes, making it difficult to learn consistent and meaningful action representations. Therefore, we sorted enemies in the SMAC environment file.__
+
 # RODE: Learning Roles to Decompose Multi-Agent Tasks
 
 RODE ([ArXiv Link](https://arxiv.org/pdf/2010.01523.pdf)) is a scalable role-based multi-agent learning method which effectively discovers roles based on joint action space decomposition according to action effects. It establishes a new state of the art on the StarCraft multi-agent benchmark.
