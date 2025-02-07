@@ -1,0 +1,49 @@
+# Ignore all files in the results directory
+results/
+
+# Ignore Python cache directories
+src/__pycache__/
+src/components/__pycache__/
+src/controllers/__pycache__/
+src/envs/__pycache__/
+src/learners/__pycache__/
+src/modules/__pycache__/
+src/modules/agents/__pycache__/
+src/modules/critics/__pycache__/
+src/modules/mixers/__pycache__/
+src/runners/__pycache__/
+src/utils/__pycache__/
+
+# Ignore general Python-related cache and temporary files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Ignore macOS system files
+.DS_Store
+__MACOSX/
+
+# Ignore external dependencies
+3rdparty/
+
+# Ignore Git metadata files (if needed)
+.gitattributes
+.gitignore
+
