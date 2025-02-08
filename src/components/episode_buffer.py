@@ -18,6 +18,7 @@ class EpisodeBatch:
         self.max_seq_length = max_seq_length
         self.preprocess = {} if preprocess is None else preprocess
         self.device = device
+        print('Episode Batch is using {}'.format(device))
 
         if data is not None:
             self.data = data
