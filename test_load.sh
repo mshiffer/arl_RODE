@@ -1,13 +1,9 @@
 #!/bin/bash
 
 # Load pyenv into the script (needed if running in a non-interactive shell)
-#export PATH="$HOME/.pyenv/bin:$PATH"
-#eval "$(pyenv init --path)"
-#eval "$(pyenv virtualenv-init -)"  # Only needed if using pyenv-virtualenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - bash)"
-
 
 # Activate the pyenv virtual environment
 pyenv shell marl  
