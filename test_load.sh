@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Load pyenv into the script (needed if running in a non-interactive shell)
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+#eval "$(pyenv virtualenv-init -)"  # Only needed if using pyenv-virtualenv
+
+# Activate the pyenv virtual environment
+pyenv activate marl  
+
 run_experiment() {
     echo "Running your experiment..."
     #running from inside instead
